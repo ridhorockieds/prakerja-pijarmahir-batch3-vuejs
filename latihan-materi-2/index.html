@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Todo List</h1>
+        <div id="input">
+            <input v-model="newTodo" placeholder="Add new todo">
+            <button v-on:click="addTodo" class="add">Add</button>
+        </div>
+
+        <div id="list">
+            <ol>
+                <li v-for="todo in todos">
+                    {{ todo }}
+                </li>
+            </ol>
+        </div>
+
+        <h3 v-if="todos.length == 0">No todo list</h3>
+        <h3 v-else-if="todos.length >= 4">Hebat!</h3>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: '.container',
+        data: {
+            newTodo: '',
+            todos: []
+        },
+        methods: {
+            addTodo: function() {
+                if (this.newTodo == '') {
+                    alert('Todo tidak boleh kosong!');
+                } else if (this.todos.includes(this.newTodo)) {
+                    alert('Todo sudah ada!');
+                } else {
+                    this.todos.push(this.newTodo);
+                    this.newTodo = '';
+                }
+            }        
+        }
+    });
+</script>
+</body>
+</html>
