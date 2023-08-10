@@ -16,6 +16,10 @@ Membuat tampilan sederhana dengan menggunakan flex box dan media query.
 
 Membuat Todo List dengan CDN VueJS, menggunakan `v-model`, `v-for`, `v-on:click`, dan terdapat alert jika form input kosong atau hanya spasi dan todo sudah ada di list.
 
-### Latihan Materi 3
+### [Latihan Materi 3](https://github.com/ridhorockieds/prakerja-pijarmahir-batch3-vue3/tree/main/latihan-materi-3/todo-list-vuejs)
+
+Membuat Todo List dengan Vue CLI versi 2, menggunakan `v-model`, `v-for`, `v-on:click`, dan terdapat alert jika form input kosong atau hanya spasi dan todo sudah ada di list.
+
+### Latihan Materi 4
 
 _coming soon..._
