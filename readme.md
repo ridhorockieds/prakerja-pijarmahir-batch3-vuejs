@@ -14,7 +14,7 @@ Membuat tampilan sederhana dengan menggunakan flex box dan media query.
 
 ### [Latihan Materi 2](https://github.com/ridhorockieds/prakerja-pijarmahir-batch3-vue3/tree/main/latihan-materi-2)
 
-Membuat Todo List dengan CDN VueJS, menggunakan `v-model`, `v-for`, `v-if`, `v-else-if`,`v-on`, dan terdapat alert jika form input kosong atau sudah ada di list.
+Membuat Todo List dengan CDN VueJS, menggunakan `v-model`, `v-for`, `v-on:click`, dan terdapat alert jika form input kosong atau hanya spasi dan todo sudah ada di list.
 
 ### Latihan Materi 3
 
