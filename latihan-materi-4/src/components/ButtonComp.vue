@@ -1,5 +1,5 @@
 <template>
-    <button>{{text}}</button>
+    <my-button @click="add">{{text}}</my-button>
 </template>
 
 <script>
@@ -8,13 +8,20 @@ export default {
     props: {
         type: {
             text: String,
+            default: "Button"
         }
     },
-    data() {
-        return {
-            text: this.type,
+    methods: {
+        add() {
+            this.$emit("add");
+        },
+        edit() {
+            this.$emit("edit");
+        },
+        delete() {
+            this.$emit("delete");
         }
-    },
+    }
 }
 </script>
 

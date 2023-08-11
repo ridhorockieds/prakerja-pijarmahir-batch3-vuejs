@@ -6,8 +6,8 @@
             <hr />
             <div id="input">
                 <input type="text" class="form-control" placeholder="Add a Todo" v-model="newTodo" />
-                <button class="btn btn-success" @click="addTodo()">Add</button>
-                <!-- <ButtonComp class="btn btn-success" type="Add" @click="addTodo()"></ButtonComp> -->
+                <button class="btn btn-success" @click="addTodo">Add</button>
+                <ButtonComp @add="addTodo" text="Add"> {{message}} </ButtonComp>
             </div>
             <hr />
             <ol>
@@ -15,13 +15,8 @@
                     <div class="todos">
                         {{ todo }}
                         <div class="action">
-                            <!-- Button Biasa -->
                             <button class="btn btn-warning" @click="editTodo(index)">Edit</button>
                             <button class="btn btn-danger" @click="deleteTodo(index)">Delete</button>
-
-                            <!-- Button Component -->
-                            <!-- <ButtonComp class="btn btn-warning" type="Edit" @click="editTodo()"></ButtonComp> -->
-                            <!-- <ButtonComp class="btn btn-danger" type="Delete" @click="deleteTodo()"></ButtonComp> -->
                         </div>
                     </div>
                 </li>
@@ -34,21 +29,19 @@
 </template>
 
 <script>
-// import ButtonComp from "./ButtonComp.vue";
+import ButtonComp from "./ButtonComp.vue";
 
 export default {
-    // components: {
-    //     ButtonComp
-    // },
+    components: {
+        ButtonComp
+    },
 
     name: "TodoList",
     data() {
         return {
             editedIndex: -1,
             newTodo: "",
-            todos: [
-                "Belajar Vue",
-            ]
+            todos: []
         };
     },
     methods: {
