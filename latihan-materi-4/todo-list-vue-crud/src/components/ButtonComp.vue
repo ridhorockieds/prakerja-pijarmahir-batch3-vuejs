@@ -1,5 +1,5 @@
 <template>
-    <my-button @click="add">{{text}}</my-button>
+    <my-button>{{text}}</my-button>
 </template>
 
 <script>
@@ -11,17 +11,11 @@ export default {
             default: "Button"
         }
     },
-    methods: {
-        add() {
-            this.$emit("add");
-        },
-        edit() {
-            this.$emit("edit");
-        },
-        delete() {
-            this.$emit("delete");
-        }
-    }
+    data() {
+        return {
+            text: this.type
+        };
+    },
 }
 </script>
 
