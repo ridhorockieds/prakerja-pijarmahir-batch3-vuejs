@@ -20,14 +20,10 @@ Membuat Todo List dengan CDN VueJS, menggunakan `v-model`, `v-for`, `v-on:click`
 
 Membuat Todo List dengan Vue CLI versi 2, menggunakan `v-model`, `v-for`, `v-on:click`, dan terdapat alert jika form input kosong atau hanya spasi dan todo sudah ada di list.
 
-<<<<<<< HEAD
-### [Latihan Materi 4](https://github.com/ridhorockieds/prakerja-pijarmahir-batch3-vue3/tree/main/latihan-materi-4/)
+### [Latihan Materi 4](https://github.com/ridhorockieds/prakerja-pijarmahir-batch3-vue3/tree/main/latihan-materi-4/todo-list-vue-crud)
 
 Membuat Todo List dengan Vue CLI versi 2, menggunakan `v-model`, `v-for`, `v-on:click`, dan terdapat alert jika form input kosong atau hanya spasi dan todo sudah ada di list. Dengan tambahan fitur edit dan hapus todo.
 
 ### Latihan Materi 5
-=======
-### Latihan Materi 4
->>>>>>> parent of 0712263 (add latihan materi 4)
 
 _coming soon..._
